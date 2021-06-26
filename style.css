@@ -1,0 +1,114 @@
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    
+     :root {
+        --hue-nutral: 200;
+        --hue-wrong: 0;
+        --hue-correct: 145;
+    }
+    
+    body {
+        --hue: var(--hue-nutral);
+        padding: 0px;
+        margin: 0px;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(var(--hue), 100%, 20%);
+    }
+    
+    .timmer {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 5px;
+        position: relative;
+        bottom: 130px;
+        left: 140px;
+    }
+    
+    body.correct {
+        --hue: var(--hue-correct);
+    }
+    
+    body.wrong {
+        --hue: var(--hue-wrong);
+    }
+    
+    .main_container {
+        position: fixed;
+        width: 500px;
+        max-width: 50%;
+        border-radius: 5px;
+        background-color: white;
+        padding: 10px;
+        box-shadow: 0 0 10px 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .btn-grid {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 10px;
+        margin: 20px 0;
+    }
+    
+    .btn {
+        --hue: var(--hue-nutral);
+        border: 1px solid hsl(var(--hue), 100%, 30%);
+        background-color: hsl(var(--hue), 100%, 50%);
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: white;
+        outline: none;
+        font-weight: bold;
+    }
+    
+    .login_btn {
+        --hue: var(--hue-nutral);
+        border: 1px solid hsl(var(--hue), 100%, 30%);
+        background-color: hsl(var(--hue), 100%, 50%);
+        padding: 5px 10px;
+        border-radius: 5px;
+        color: white;
+        outline: none;
+        font-weight: bold;
+    }
+    
+    .btn:hover {
+        border-color: black;
+    }
+    
+    .btn.correct {
+        --hue: var(--hue-correct);
+        color: black;
+    }
+    
+    .btn.wrong {
+        --hue: var(--hue-wrong);
+    }
+    
+    .next-btn,
+    .submit-btn {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 10px 20px;
+    }
+    
+    .controls {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .hide {
+        display: none;
+    }

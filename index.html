@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="timmer">
+        <h1 id="min">0</h1>
+        <h1>:</h1>
+        <h1 id="sec">0</h1>
+        <h1>:</h1>
+        <h1 id="msec">0</h1>
+    </div>
+    <div id="main-div" class="main_container">
+        <div class="login-div" id="login">
+            <h2>Login</h2>
+            <input type="text" name="username" id="username" placeholder="Enter Username"><br><br>
+            <input type="password" name="password" id="Password" placeholder="Enter Password"><br><br>
+            <button id="login-btn" class="login_btn">Login</button>
+        </div>
+        <div id="quesAns-div" class="hide">
+            <div id="heading">
+                <h1>QUIZ JAVASCRIPT</h1>
+            </div>
+            <div id="question">Question</div>
+            <div id="answer-btn" class="btn-grid">
+                <button class="btn">Answer</button>
+                <button class="btn">Answer</button>
+                <button class="btn">Answer</button>
+                <button class="btn">Answer</button>
+            </div>
+
+            <div class="controls">
+                <button id="next-btn" class="next-btn btn hide">Next</button>
+                <button id="submit-btn" class="submit-btn btn hide">Submit</button>
+            </div>
+            <div id="score-div" class="hide">
+                <h2>CONGRATULATIONS🎉</h2><br><br>
+                <h4 id="result"> Score </h4>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
